@@ -7,6 +7,7 @@ package entitas;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -28,6 +29,7 @@ public class Order1 implements Serializable {
     @GeneratedValue
     private long idOrder;
     
+    private Date tglTransaksi;
     private float totalHarga;
     //many to one ke customer
     @ManyToOne
@@ -43,10 +45,12 @@ public class Order1 implements Serializable {
     public Order1() {
     }
 
-    public Order1(long idOrder, float totalHarga, DetailOrder detailOrder) {
-        this.idOrder = idOrder;
-        this.totalHarga = totalHarga;
-        
+    public Date getTglTransaksi() {
+        return tglTransaksi;
+    }
+
+    public void setTglTransaksi(Date tglTransaksi) {
+        this.tglTransaksi = tglTransaksi;
     }
 
     

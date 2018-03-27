@@ -39,5 +39,46 @@ public class DetailOrder implements Serializable {
     public DetailOrder() {
     }
 
+    public Long getIdDetailOrder() {
+        return idDetailOrder;
+    }
+
+    public void setIdDetailOrder(Long idDetailOrder) {
+        this.idDetailOrder = idDetailOrder;
+    }
+
+    public Order1 getIdOrder() {
+        return idOrder;
+    }
+
+    public void setIdOrder(Order1 idOrder) {
+        this.idOrder = idOrder;
+    }
+
+    public Book getId() {
+        return id;
+    }
+
+    public void setId(Book id) {
+        this.id = id;
+    }
+
+    public int getSubtotal() {
+        return subtotal;
+    }
+
+    public void setSubtotal(int subtotal) {
+        this.subtotal = subtotal;
+    }
+
+    public int getJumlah() {
+        return jumlah;
+    }
+
+    public void setJumlah(int jumlah) {
+        this.jumlah = jumlah;
+    }
+
+    
     
 }
